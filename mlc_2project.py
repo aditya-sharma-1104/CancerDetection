@@ -10,7 +10,6 @@ Original file is located at
 pip install numpy pandas matplotlib scikit-learn
 
 # Importing libraries
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -29,7 +28,6 @@ from sklearn.ensemble import ( RandomForestClassifier, GradientBoostingClassifie
 from sklearn.metrics import (accuracy_score,confusion_matrix,classification_report,ConfusionMatrixDisplay,roc_curve,auc)
 
 #Loading the dataset
-
 
 data = load_breast_cancer()
 
@@ -116,45 +114,19 @@ models=["RF","SVM","GB","Ensemble"]
 scores=[rf_accuracy,svm_accuracy,gb_accuracy,accuracy_score(y_test,pred)]
 plt.bar(models,scores)
 
-plt.title(
-"Model Accuracy Comparison"
-)
+plt.title("Model Accuracy Comparison")
 
 plt.show()
 
-hard_model=VotingClassifier(
-estimators=[
-("rf",rf),
-("svm",svm),
-("gb",gb)
-],
-voting="hard"
-)
+hard_model=VotingClassifier(estimators=[("rf",rf),("svm",svm),("gb",gb)],voting="hard")
 
-hard_model.fit(
-X_train,
-y_train
-)
+hard_model.fit(X_train,y_train)
 
-hard_pred=hard_model.predict(
-X_test
-)
+hard_pred=hard_model.predict(X_test)
 
-print(
-"Hard Voting:",
-accuracy_score(
-y_test,
-hard_pred
-)
-)
+print("Hard Voting:",accuracy_score(y_test,hard_pred))
 
-print(
-"Soft Voting:",
-accuracy_score(
-y_test,
-pred
-)
-)
+print("Soft Voting:",accuracy_score(y_test,pred))
 
 #confusion matrix
 ConfusionMatrixDisplay.from_estimator(ensemble,X_test,y_test)
