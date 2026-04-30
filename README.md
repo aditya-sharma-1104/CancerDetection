@@ -34,10 +34,14 @@ Load Data → EDA → Preprocessing → Model Training → Ensemble → Evaluati
 * Ensemble Accuracy: ~98%
 * Cross Validation Accuracy: ~97–98%
 * ROC-AUC Score: 0.995
+  <img width="681" height="548" alt="image" src="https://github.com/user-attachments/assets/01df7e7d-5354-4a04-b3ee-b5395c1e0cb2" />
+
 
 ## Evaluation Techniques
 
 * Confusion Matrix
+  <img width="597" height="517" alt="image" src="https://github.com/user-attachments/assets/7cc41d3f-b7bd-46c8-b245-cdd2ef8a25ce" />
+
 * Classification Report
 * ROC Curve
 * Learning Curve
