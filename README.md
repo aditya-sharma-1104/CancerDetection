@@ -22,8 +22,6 @@ This project develops a machine learning system to classify breast tumors as ben
 * Gradient Boosting
 * Voting Classifier (Soft Voting Ensemble)
 
----
-
 ## Workflow
 
 Load Data → EDA → Preprocessing → Model Training → Ensemble → Evaluation → Prediction
