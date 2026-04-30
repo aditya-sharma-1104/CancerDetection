@@ -76,11 +76,16 @@ Sample predictions are included using dataset entries.
 
 ## Results Preview
 
-(Add screenshots here after uploading to GitHub)
 
 * ROC Curve
+ <img width="742" height="527" alt="image" src="https://github.com/user-attachments/assets/d8dc8f18-d9f5-4be0-b799-3028fa1359e0" />
+
 * Learning Curve
+  <img width="736" height="544" alt="image" src="https://github.com/user-attachments/assets/e925f583-c3c9-4e9e-829b-6f991f9308b4" />
+
 * Feature Importance Graph
+  <img width="1268" height="648" alt="image" src="https://github.com/user-attachments/assets/4bc1715e-a0ea-441e-bdfd-609e646ff0b6" />
+
 
 ## Future Work
 
