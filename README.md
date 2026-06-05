@@ -89,9 +89,13 @@ Sample predictions are included using dataset entries.
   <img width="1268" height="648" alt="image" src="https://github.com/user-attachments/assets/4bc1715e-a0ea-441e-bdfd-609e646ff0b6" />
 
 
+## Recent Updates
+
+* Deployed as a web application with a React frontend and Flask backend.
+* Added support for Multi-Cancer detection including Cervical Cancer.
+
 ## Future Work
 
-* Deploy as a web application
 * Integrate medical imaging data
 * Add explainability methods
 
